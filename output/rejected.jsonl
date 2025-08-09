@@ -1,0 +1,10 @@
+{"type":"access_log","timestamp":"2025-05-01T12:02:00Z","userId":" ","ip":"10.0.0.3"}
+{"type":"access_log","timestamp":"2025-05-01T12:03:00Z","userId":"user-789","ip":"not-an-ip"}
+{"type":"access_log","userId":"user-000","ip":"192.168.0.4"}
+{"type":"transaction","amount":"not-a-number","currency":"usd","timestamp":"2025-05-01T12:13:00Z"}
+{"type":"transaction","amount":"100.00","currency":"","timestamp":"2025-05-01T12:14:00Z"}
+{"type":"transaction","amount":"100.00","currency":"usd","timestamp":"not-a-date"}
+{"type":"transaction","amount":"100.00","currency":"usd"}
+{"type":"system_error","timestamp":"2025-05-01T12:17:00Z","level":"fatal","message":"Unknown error"}
+{"type":"system_error","level":"info","message":"No timestamp"}
+{"type":"system_error","timestamp":"2025-05-01T12:20:00Z","level":"info"}

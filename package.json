@@ -1,0 +1,19 @@
+{
+  "name": "hw11-patterns",
+  "version": "1.0.0",
+  "type": "commonjs",
+  "main": "dist/main.js",
+  "scripts": {
+    "start": "ts-node src/main.ts",
+    "build": "tsc"
+  },
+  "devDependencies": {
+    "@types/node": "^22.17.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.2"
+  },
+  "description": "### Опис завдання",
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
