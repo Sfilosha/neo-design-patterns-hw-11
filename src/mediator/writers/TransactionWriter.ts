@@ -1,6 +1,5 @@
 import { TransactionRecord } from "../../models/DataRecord";
 import * as fs from "fs/promises";
-import * as path from "path";
 
 export class TransactionWriter {
   private lines: string[] = ["timestamp,amount,currency"];
@@ -9,7 +8,7 @@ export class TransactionWriter {
     this.lines.push(line);
   }
   async finalize() {
-    const outputPath = path.join("output", "transactions.csv");
-    await fs.writeFile(outputPath, this.lines.join("\n"), "utf-8");
+    await fs.mkdir("output", { recursive: true });
+    await fs.writeFile("output/transactions.csv", this.lines.join("\n"));
   }
 }
