@@ -74,5 +74,3 @@ main().catch((e) => {
   console.error("Помилка при запуску:", e);
   process.exit(1);
 });
-
-main();
